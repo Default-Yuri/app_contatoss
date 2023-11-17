@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class terceira_tela extends StatefulWidget {
-  const terceira_tela({super.key});
+class TerceiraTela extends StatefulWidget {
+  const TerceiraTela({Key? key}) : super(key: key);
 
   @override
-  State<terceira_tela> createState() => _terceira_telaState();
+  State<TerceiraTela> createState() => _TerceiraTelaState();
 }
 
-class _terceira_telaState extends State<terceira_tela> {
+class _TerceiraTelaState extends State<TerceiraTela> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,44 +43,44 @@ class _terceira_telaState extends State<terceira_tela> {
               height: 20,
             ),
             TextFormField(
-                //controller: controllerPeso,
-                decoration: const InputDecoration(
-                  labelText: 'Telefone',
-                  hintText: 'Digite seu número de telefone',
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(16.0)),
-                  ),
-                  labelStyle: TextStyle(
+              //controller: controllerPeso,
+              decoration: const InputDecoration(
+                labelText: 'Telefone',
+                hintText: 'Digite seu número de telefone',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                ),
+                labelStyle: TextStyle(
                   color: Color.fromARGB(255, 39, 30, 30),
                   fontWeight: FontWeight.w400,
                   fontSize: 13,
                 ),
+              ),
+              style: const TextStyle(fontSize: 20),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            TextFormField(
+              //controller: controllerPeso,
+              decoration: const InputDecoration(
+                labelText: 'Email',
+                hintText: 'Digite seu Email',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(16.0)),
                 ),
-                style: const TextStyle(fontSize: 20),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              TextFormField(
-                //controller: controllerPeso,
-                decoration: const InputDecoration(
-                  labelText: 'Email',
-                  hintText: 'Digite seu Email',
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(16.0)),
-                  ),
-                  labelStyle: TextStyle(
+                labelStyle: TextStyle(
                   color: Color.fromARGB(255, 39, 30, 30),
                   fontWeight: FontWeight.w400,
                   fontSize: 13,
                 ),
-                ),
-                style: const TextStyle(fontSize: 20),
               ),
-              SizedBox(
-                height: 20,
-              ),
-              Container(
+              style: const TextStyle(fontSize: 20),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
               height: 50,
               alignment: Alignment.center,
               decoration: const BoxDecoration(
@@ -88,19 +88,20 @@ class _terceira_telaState extends State<terceira_tela> {
                 borderRadius: BorderRadius.all(Radius.circular(5)),
               ),
               child: TextButton(
-                  onPressed: () {},
-                  child: const Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        "Cadastrar",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                        ),
-                      )
-                    ],
-                  )),
+                onPressed: () {},
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      "Cadastrar",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ),
           ],
         ),
